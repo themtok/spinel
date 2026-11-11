@@ -1,0 +1,3 @@
+### Reserved for release VM options such as Erlang node or runtime settings.
+
+# Optional VM arguments for the Unix release launcher.

@@ -1,0 +1,15 @@
+{%% OTP application descriptor.
+%% Declares the startup module, registered process names, and runtime dependencies.
+
+application, erl_harness, [
+    {description, "Supervised Erlang agent harness"},
+    {vsn, "0.1.0"},
+    {registered, [erl_harness_sup, erl_harness_greeter, erl_harness_openai,
+        erl_harness_config, erl_harness_controller, erl_harness_session_sup,
+        erl_harness_requests_sup, erl_harness_tools_sup, erl_harness_mcp_sup,
+        erl_harness_mcp]},
+    {mod, {erl_harness_app, []}},
+    {applications, [kernel, stdlib, inets, ssl, educkui]},
+    {env, [{greeting, <<"Hello, world!">>}]},
+    {modules, []}
+]}.

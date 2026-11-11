@@ -1,0 +1,4 @@
+[{<<"educkui">>,
+  {git,"https://github.com/kasicass/educkui.git",
+       {ref,"ab55dfafbbfad9f11b4795e334266bad8a676564"}},
+  0}].

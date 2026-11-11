@@ -1,0 +1,10 @@
+%%% Example of the local settings map, including where to configure MCP servers.
+
+% Copy to local.config to override defaults. Keep actual keys in this
+%% ignored file or set OPENROUTER_API_KEY in the launch environment.
+#{
+    model => <<"thinkingmachines/inkling-2-small:free">>,
+    url => <<"https://openrouter.ai/api/v1/chat/completions">>,
+    api_key => {env, "OPENROUTER_API_KEY"},
+    mcp_servers => []
+}.

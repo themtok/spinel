@@ -1,0 +1,5 @@
+/_build/
+/.rebar3/
+/erl_crash.dump
+/config/local.config
+*.beam
